@@ -1,0 +1,43 @@
+fit:
+  δ: 20
+  Δval: 2
+  Δlog: 200
+  Δsave: 1
+  clipgrad: 5.0e-2
+  verbose: true
+  epochs: 100
+  awgn_range: 25
+  awgn_maxval: 255
+  num_log_imgs: 1
+  logdir: "debug/test"
+
+opt:
+  lr: 5.0e-4
+  step: 200
+  γ: 0.96
+
+ckpt: null
+pretrain_config: null
+
+net:
+  K: 30                       # lista iterations
+  M: 169                       # latent channels
+  C: 1                        # input channels
+  p: 7                        # filter side-length
+  s: 2                        # conv stride
+  d: 1                        # order of polynomial thresholds
+  MoG: 5                      # > 1 means gabor filters
+  nlss_hidden: 64
+  nlss_compressed: "all"      # false "similarity" "all" (true)
+  nlss_similarity: "distance" # "distance" "dot"
+  nlss_windowsize: 35          # 1 means CDLNet, > 1 means GroupCDL
+  nlss_Δupdate: 5           
+
+data:
+  trainpath: dataset/CBSD432
+  valpath:   dataset/Kodak
+  testpath:  dataset/CBSD68
+  batchsize: 10
+  cropsize: 70
+  grayscale: true
+
