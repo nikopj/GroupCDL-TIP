@@ -1,0 +1,38 @@
+opt:
+  γ: 0.96
+  step: 200
+  lr: 0.0005
+fit:
+  awgn_range: 50
+  Δval: 200
+  Δsave: 1
+  clipgrad: 0.05
+  Δlog: 200
+  logdir: "trained_nets/GroupCDL-50"
+  verbose: true
+  num_log_imgs: 1
+  δ: 20
+  awgn_maxval: 255
+  epochs: 30000
+ckpt: "trained_nets/GroupCDL-50/net.bson"
+pretrain_config: ~
+net:
+  p: 7
+  nlss_Δupdate: 5
+  nlss_compressed: "all"
+  K: 30
+  nlss_hidden: 64
+  nlss_similarity: "distance"
+  M: 169
+  d: 0
+  s: 2
+  nlss_windowsize: 35
+  MoG: 0
+  C: 1
+data:
+  batchsize: 32
+  valpath: "dataset/Kodak"
+  trainpath: "dataset/CBSD432"
+  testpath: "dataset/CBSD68"
+  cropsize: 70
+  grayscale: true

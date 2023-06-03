@@ -1,0 +1,35 @@
+opt:
+  γ: 0.95
+  step: 50
+  lr: 0.0005
+fit:
+  awgn_range:
+    - 20
+    - 30
+  Δval: 50
+  Δsave: 1
+  clipgrad: 0.05
+  Δlog: 50
+  logdir: "trained_nets/CDLNet-2030"
+  verbose: true
+  num_log_imgs: 1
+  δ: 20
+  awgn_maxval: 255
+  epochs: 6000
+ckpt: "trained_nets/CDLNet-2030/net.bson"
+pretrain_config: ~
+net:
+  p: 7
+  K: 30
+  M: 169
+  d: 1
+  s: 2
+  MoG: 0
+  C: 1
+data:
+  batchsize: 10
+  valpath: "dataset/Kodak"
+  trainpath: "dataset/CBSD432"
+  testpath: "dataset/CBSD68"
+  cropsize: 128
+  grayscale: true

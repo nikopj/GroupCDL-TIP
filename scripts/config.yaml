@@ -1,5 +1,5 @@
 fit:
-  δ: 20
+  δ: 20                     # backtrack threshold
   Δval: 2
   Δlog: 200
   Δsave: 1
@@ -12,12 +12,12 @@ fit:
   logdir: "debug/test"
 
 opt:
-  lr: 5.0e-4
-  step: 200
-  γ: 0.96
+  lr: 5.0e-4                 # learning rate
+  step: 200                  # scheduler step-size
+  γ: 0.96                    # scheduler reduction factor
 
-ckpt: null
-pretrain_config: null
+ckpt: null                   # checkpoint ckpt path (bson)
+pretrain_config: null        # CDLNet pretrain config path (yaml)
 
 net:
   K: 30                       # lista iterations
