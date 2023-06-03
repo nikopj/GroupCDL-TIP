@@ -2,6 +2,7 @@
 This is the official implementation of "Fast and Interpretable Nonlocal Neural
 Networks for Image Denoising via Group-Sparse Convolutional Dictionary
 Learning", under review for IEEE Transactions on Image Processing.
+[GroupCDL Architecture](media/gcdl_arch.pdf)
 
 ## Install
 For those new to Julia, it's recommended to install via the [juliaup](https://github.com/JuliaLang/juliaup) manager:
@@ -45,9 +46,8 @@ julia> main("trained_nets/GroupCDL-25/config.yaml"; eval=true, eval_dsetpath="da
 ```
 
 ## Extra
-See `sliding_window.mp4` for an animation of how the block-circulant with circulant blocks sparsity pattern
+See `media/sliding_window.mp4` for an animation of how the block-circulant with circulant blocks sparsity pattern
 of GroupCDL's adjacency matrix is a result of the sliding-window nonlocal self-similarity.
-https://github.com/nikopj/GroupCDL-TIP/assets/8889866/f0c91213-85b1-44a7-bbf0-89df1aed7e98
 
 ## Citation
 coming soon.
