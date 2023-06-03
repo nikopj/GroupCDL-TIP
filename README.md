@@ -47,7 +47,7 @@ julia> main("trained_nets/GroupCDL-25/config.yaml"; eval=true, eval_dsetpath="da
 ## Extra
 See `media/sliding_window.mp4` for a cute animation of how the block-circulant with circulant blocks sparsity pattern
 of GroupCDL's adjacency matrix is a result of the sliding-window nonlocal self-similarity.
-![sliding-window anim](media/sliding_window.mp4)
+![sliding-window anim](sliding_window.mp4)
 
 ## Citation
 coming soon.
