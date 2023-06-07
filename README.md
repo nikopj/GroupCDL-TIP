@@ -48,6 +48,16 @@ julia> main("trained_nets/GroupCDL-25/config.yaml"; eval=true, eval_dsetpath="da
 ## Extra
 See `media/sliding_window.mp4` for an animation of how the block-circulant with circulant blocks sparsity pattern
 of GroupCDL's adjacency matrix is a result of the sliding-window nonlocal self-similarity.
+![final frame of media/sliding_window.mp4](media/sliding_window.png)
 
 ## Citation
-coming soon.
+```
+@misc{janjušević2023fast,
+      title={Fast and Interpretable Nonlocal Neural Networks for Image Denoising via Group-Sparse Convolutional Dictionary Learning}, 
+      author={Nikola Janjušević and Amirhossein Khalilian-Gourtani and Adeen Flinker and Yao Wang},
+      year={2023},
+      eprint={2306.01950},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+}
+```
