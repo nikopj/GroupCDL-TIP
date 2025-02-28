@@ -1,7 +1,10 @@
 # GroupCDL-TIP
-This is the official implementation of ["Fast and Interpretable Nonlocal Neural
+THIS PROJECT HAS MOVED TO A NEW REPO: [GroupCDL](https://github.com/nikopj/GroupCDL).
+
+<strike> This is the official implementation of ["Fast and Interpretable Nonlocal Neural
 Networks for Image Denoising via Group-Sparse Convolutional Dictionary
-Learning"](https://arxiv.org/abs/2306.01950), under review for IEEE Transactions on Image Processing.
+Learning"](https://arxiv.org/abs/2306.01950), under review for IEEE Transactions on Image Processing.</strike>
+
 ![GroupCDL Architecture](media/gcdl_arch.png)
 
 ## Install
